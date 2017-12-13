@@ -5,9 +5,9 @@ Put your solutions here.
 
 Make a directory matching your github username.
 
-Add your solution file: `username/day01.rb`
+Add your solution file: `username/day02.rb`
 
-Include your input data: `username/day01.input`
+Include your input data: `username/day02.input`
 
 Then create a pull request to this repository.
 
