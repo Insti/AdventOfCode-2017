@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>2017 Advent of Code</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <style type="text/css">
+      @import url(remark.local/css?family=Yanone+Kaffeesatz);
+      @import url(remark.local/css?family=Droid+Serif:400,700,400italic);
+      @import url(remark.local/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { 
+		  font-family: 'Ubuntu Mono'; 
+			  color: #0000FF;
+				  font-size: 1.5em;
+	  }
+      .remark-slide-content {background-size: cover}
+	  .remark-slide-content a:visited {color:#0000FF;}  /* visited link */
+	  .remark-slide-content a {font-size: 1.5em;}
+
+	  .remark-slide-content .bigger {font-size: 1.5em;}
+
+	  .remark-slide-content .avatar img {
+		  object-fit: cover;
+		  width: 200px;
+		  height: 200px;
+	  }
+
+
+	  .footer { 
+		  bottom: 12px;
+		  opacity: 1;
+		  position: absolute;
+		  right: 80px;
+	      width: 88%;
+	  }
+
+	  .footer .name { float: left; }
+	  .footer .twitter { float: right; }
+
+	  .thirds { margin-bottom: 5em; }
+
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle
+
+# Advent of Code
+
+Hack Night
+
+Copenhagen Ruby Brigade
+
+Wednesday, December 13, 2017
+
+<div class='footer'><div class='name'>Geoff Hubbard</div><div class='twitter'>@instigate_it</div></footer>
+
+???
+
+Front page
+
+---
+
+class: center, middle
+
+.avatar[![Avatar](images/geoff-avatar.png)]
+
+### Geoff Hubbard
+
+#### Github: Insti 
+
+#### Twitter: @instigate_it
+
+<div class='footer'><div class='name'>Geoff Hubbard</div><div class='twitter'>@instigate_it</div></footer>
+
+???
+I'm Geoff.
+this is what I look like on the internet.
+Insti on github
+@instigate_it on twitter.
+
+---
+
+class: center, middle
+
+# Advent of Code
+
+Hack Night
+
+Copenhagen Ruby Brigade
+
+Wednesday, December 13, 2017
+
+<div class='footer'><div class='name'>Geoff Hubbard</div><div class='twitter'>@instigate_it</div></footer>
+
+???
+
+Front page again
+
+---
+
+
+
+background-image: url(images/AdventOfCode-blank.png)
+
+<div class='footer'><div class='name'>Geoff Hubbard</div><div class='twitter'>@instigate_it</div></footer>
+
+???
+
+Advent of Code is a series of small programming puzzles that you do one a day during December.
+[2017 empty image]
+
+Each puzzle has a theme and a little story that gives some context for the problem.
+
+The puzzles come in two parts, once you've solved the first part the second
+part is revealed. The second part is usually an extension of the problem in the
+first part and either builds upon it or asks a slightly different question about the data.
+
+For each part you solve you receive a star. So the goal is to collect all 50
+
+---
+
+background-image: url(images/AdventOfCode-solved.png)
+
+<div class='footer'><div class='name'>Geoff Hubbard</div><div class='twitter'>@instigate_it</div></footer>
+
+???
+
+Your homepage will become more colourful as an image is slowly revealed.
+[2017 colourful image]
+This year it's some kind of maze or circuit that changes every time you reload the page.
+
+The puzzles have different difficulties, some are easy, some are harder. But
+they are all good programming practice, and you can choose yourself what to
+focus on.  It might be learning how to solve the problems in Ruby, it might be
+competing on the global leaderboard to for who can complete the challenges
+fastest.
+
+Since I don't want to get up at 6am every day when the new puzzles become
+available I've been focusing on my Test Driven Development Discipline and
+always making sure I have a failing test before writing any code.
+
+---
+
+
+# Tonight
+
+* Groups of 3
+
+* Work on puzzles: 1 and 2
+
+* Take a break
+
+* Tidy up one solution
+
+* Group presentations
+
+
+
+<div class='footer'><div class='name'>Geoff Hubbard</div><div class='twitter'>@instigate_it</div></footer>
+
+???
+
+
+Tonight I'm going to put you into groups and we're all going to work on the
+first two problems. Day 1 is a good introduction, and day 2 is a little harder.
+
+At 6:50 we'll have a 10 min break.
+
+After that you'll have an extra 15-20 minutes to tidy up your code, before
+coming back here at 7:30 when every group will get a chance to show everyone
+one of their solutions. (you can choose which one and submit it as a pull
+request to my advent of code git repository.
+
+
+
+I'd like to make groups of 3 with one beginner one experienced and one somewhere in between.
+
+I've got some playing cards here, I'm going to hand them out, the suits are not
+important, I've got n to give to beginners, n to give to experienced developers
+and n to give to everyone else. 
+
+We might need to be a bit flexible so the numbers work out.
+
+So who considers themselves a beginner and wants to be able to learn more?
+
+<hand out n cards>
+
+Who is experienced and feeling helpful?
+
+<hand out n cards>
+
+And everyone left, who can probably answer some questions but will have some of their own to ask. 
+
+<hand out n cards>
+
+(If you're an experienced programmer, but wouldn't call
+yourself experienced with Ruby you're probably in the middle group.)
+
+???
+
+---
+
+class: center, middle
+
+<br/>
+
+## Advent of code
+
+https://adventofcode.com/2017/
+
+<br/>
+
+Private Leaderboard code
+
+`40866-2ca22301`
+
+<br/>
+
+##Github
+
+https://github.com/Insti
+
+<div class='footer'><div class='name'>Geoff Hubbard</div><div class='twitter'>@instigate_it</div></footer>
+
+???
+
+OK Now we've got our groups
+
+Join my Private leaderboard so we can easily see each others progress
+
+You can probably cheat by Googling Advent of Code solutions, so don't do that :)
+It's OK to use general programming resources, ruby docs, stack overflow etc.
+
+
+Good luck.
+
+Any questions?
+
+
+    </textarea>
+    <script src="remark.local/remark.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
